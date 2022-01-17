@@ -10,6 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- FONTAWESOME CDN -->
     <script src="https://kit.fontawesome.com/3e07f7d7b0.js" crossorigin="anonymous"></script>
+    <!-- Material+Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <!-- Sweetalert2 -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- DATATABLES CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
@@ -31,42 +35,18 @@
 
         <div class="row mt-3">
             <div class="col-lg 12">
-                <table id="example" class="table table-striped table-bordered" style="width:100%">
+                <table id="tablaUsuario" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Age</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                        </tr>
-                        <tr>
-                            <td>Garrett Winters</td>
-                            <td>Accountant</td>
-                            <td>Tokyo</td>
-                            <td>63</td>
-                            <td>2011/07/25</td>
-                            <td>$170,750</td>
-                        </tr>
-                        <tr>
-                            <td>Ashton Cox</td>
-                            <td>Junior Technical Author</td>
-                            <td>San Francisco</td>
-                            <td>66</td>
-                            <td>2009/01/12</td>
-                            <td>$86,000</td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -83,11 +63,6 @@
     <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
 
     <script src="mainCrudUsuario.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#example').DataTable();
-        });
-    </script>
 </body>
 
 </html>
